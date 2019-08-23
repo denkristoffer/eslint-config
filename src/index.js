@@ -84,7 +84,7 @@ module.exports = {
     'no-var': 'warn',
     'react/prop-types': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'error',
     'unicorn/filename-case': ['error', { case: 'camelCase' }],
     'unicorn/prevent-abbreviations': [
       'error',

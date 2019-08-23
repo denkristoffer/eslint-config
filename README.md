@@ -1,5 +1,7 @@
 # @denkristoffer/eslint-config
 
+ESLint configuration.
+
 ## Install
 
 Install the package
