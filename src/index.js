@@ -91,4 +91,9 @@ module.exports = {
       { replacements: { args: false } },
     ],
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }
