@@ -43,6 +43,8 @@ module.exports = {
     {
       files: ["**/next.config.js"],
       rules: {
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/no-var-requires": "off",
         "unicorn/prevent-abbreviations": [
           "error",
           {
