@@ -2,8 +2,8 @@ module.exports = {
   env: { node: true },
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-typechecking",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:unicorn/recommended",
@@ -73,14 +73,6 @@ module.exports = {
     "unicorn",
   ],
   rules: {
-    "@typescript-eslint/explicit-function-return-type": [
-      "warn",
-      {
-        allowExpressions: true,
-        allowHigherOrderFunctions: true,
-        allowTypedFunctionExpressions: true,
-      },
-    ],
     "@typescript-eslint/no-non-null-assertion": "off",
     "no-null/no-null": "error",
     "no-var": "error",
@@ -90,7 +82,12 @@ module.exports = {
     "unicorn/filename-case": ["error", { case: "camelCase" }],
     "unicorn/prevent-abbreviations": [
       "error",
-      { replacements: { args: false } },
+      {
+        replacements: {
+          args: false,
+          lib: false,
+        },
+      },
     ],
   },
   settings: {
