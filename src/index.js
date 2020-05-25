@@ -4,6 +4,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-typechecking",
+    "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:unicorn/recommended",
@@ -65,6 +66,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: [
     "@typescript-eslint",
+    "jest",
     "jsx-a11y",
     "no-null",
     "prettier",
