@@ -14,14 +14,14 @@ and add it to your `.eslintrc.js`. If it's a TypeScript project you should also 
 
 ```js
 module.exports = {
-  root: true,
   extends: [
     "@denkristoffer/eslint-config",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   parserOptions: {
-    tsconfigRootDir: __dirname,
     project: ["./tsconfig.json"],
+    tsconfigRootDir: __dirname,
   },
+  root: true,
 };
 ```
