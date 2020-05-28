@@ -14,7 +14,7 @@ module.exports = {
     {
       files: ["**/*.tsx"],
       rules: {
-        "no-null/no-null": "off",
+        "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
           "error",
           {
@@ -24,7 +24,6 @@ module.exports = {
             },
           },
         ],
-      },
     },
     {
       files: ["**/jest.config.js"],
@@ -66,7 +65,6 @@ module.exports = {
     "@typescript-eslint",
     "jest",
     "jsx-a11y",
-    "no-null",
     "prettier",
     "react",
     "react-hooks",
@@ -74,7 +72,6 @@ module.exports = {
   ],
   rules: {
     "@typescript-eslint/no-non-null-assertion": "off",
-    "no-null/no-null": "error",
     "no-var": "error",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
