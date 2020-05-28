@@ -4,6 +4,7 @@
   "main": "src/index.js",
   "license": "MIT",
   "files": [
+    "js.js",
     "src"
   ],
   "dependencies": {
