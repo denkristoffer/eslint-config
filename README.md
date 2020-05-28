@@ -10,18 +10,29 @@ Install the package
 yarn add -D eslint @denkristoffer/eslint-config
 ```
 
-and add it to your `.eslintrc.js`. If it's a TypeScript project you should also extend `"plugin:@typescript-eslint/recommended-requiring-type-checking"`:
+and add it to your `.eslintrc.js`.
+
+### TypeScript projects
+
+Make sure to set `parserOptions.tsconfigRootDir` as well for the rules requiring type information:
 
 ```js
 module.exports = {
-  extends: [
-    "@denkristoffer/eslint-config",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-  ],
+  extends: "@denkristoffer/eslint-config",
   parserOptions: {
-    project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
   },
+  root: true,
+};
+```
+
+### JavaScript projects
+
+For JavaScript projects you should extend `"@denkristoffer/eslint-config/js"` instead.
+
+```js
+module.exports = {
+  extends: "@denkristoffer/eslint-config/js",
   root: true,
 };
 ```
