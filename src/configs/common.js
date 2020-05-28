@@ -24,6 +24,7 @@ module.exports = {
             },
           },
         ],
+      },
     },
     {
       files: ["**/jest.config.js"],
