@@ -41,6 +41,9 @@ module.exports = {
     },
     {
       files: ["**/next.config.js"],
+      env: {
+        node: true,
+      },
       rules: {
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/no-var-requires": "off",
@@ -57,7 +60,7 @@ module.exports = {
     {
       files: ["**/__tests__/**/*"],
       env: {
-        jest: true,
+        "jest/globals": true,
       },
     },
   ],
