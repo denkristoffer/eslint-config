@@ -12,21 +12,6 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ["**/*.tsx"],
-      rules: {
-        "unicorn/no-null": "off",
-        "unicorn/prevent-abbreviations": [
-          "error",
-          {
-            replacements: {
-              props: false,
-              ref: false,
-            },
-          },
-        ],
-      },
-    },
-    {
       files: ["**/jest.config.js"],
       rules: {
         "unicorn/prevent-abbreviations": [
