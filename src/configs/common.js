@@ -10,6 +10,7 @@ module.exports = {
     "prettier/@typescript-eslint",
     "prettier/unicorn",
   ],
+  ignorePatterns: [".eslintrc.js"],
   overrides: [
     {
       files: ["**/jest.config.js"],
