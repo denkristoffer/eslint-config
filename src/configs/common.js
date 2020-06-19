@@ -64,6 +64,15 @@ module.exports = {
       { selector: "class", format: ["StrictPascalCase"] },
       { selector: "default", format: ["strictCamelCase"] },
       { selector: "memberLike", format: ["strictCamelCase"] },
+      {
+        selector: "parameter",
+        format: ["strictCamelCase"],
+        leadingUnderscore: "allow",
+      },
+      {
+        selector: "property",
+        format: ["strictCamelCase", "snake_case"],
+      },
       { selector: "typeLike", format: ["StrictPascalCase"] },
     ],
     "@typescript-eslint/no-non-null-assertion": "off",
