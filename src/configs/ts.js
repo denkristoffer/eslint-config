@@ -15,7 +15,7 @@ module.exports = {
           "error",
           {
             selector: "variableLike",
-            format: ["strictCamelCase", "strictPascalCase"],
+            format: ["strictCamelCase", "StrictPascalCase"],
           },
         ],
         "unicorn/no-null": "off",
