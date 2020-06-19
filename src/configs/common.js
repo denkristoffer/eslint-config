@@ -61,8 +61,10 @@ module.exports = {
   rules: {
     "@typescript-eslint/naming-convention": [
       "error",
+      { selector: "class", format: ["StrictPascalCase"] },
       { selector: "default", format: ["strictCamelCase"] },
-      { selector: "interface", format: ["StrictPascalCase"] },
+      { selector: "memberLike", format: ["strictCamelCase"] },
+      { selector: "typeLike", format: ["StrictPascalCase"] },
     ],
     "@typescript-eslint/no-non-null-assertion": "off",
     "no-var": "error",

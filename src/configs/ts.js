@@ -11,6 +11,13 @@ module.exports = {
     {
       files: ["**/*.tsx"],
       rules: {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            selector: "variableLike",
+            format: ["strictCamelCase", "strictPascalCase"],
+          },
+        ],
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
           "error",
