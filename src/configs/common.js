@@ -63,7 +63,7 @@ module.exports = {
     "@typescript-eslint/naming-convention": [
       "error",
       { selector: "class", format: ["StrictPascalCase"] },
-      { selector: "default", format: ["snake_case"] },
+      { selector: "default", format: ["strictCamelCase"] },
       { selector: "memberLike", format: ["strictCamelCase"] },
       {
         selector: "parameter",
