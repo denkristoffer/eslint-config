@@ -30,7 +30,6 @@ module.exports = {
         node: true,
       },
       rules: {
-        "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/no-var-requires": "off",
         "unicorn/prevent-abbreviations": [
           "error",
@@ -60,6 +59,10 @@ module.exports = {
     "unicorn",
   ],
   rules: {
+    "@typescript-eslint/naming-conventions": [
+      "error",
+      { selector: "default", format: ["camelCase"] },
+    ],
     "@typescript-eslint/no-non-null-assertion": "off",
     "no-var": "error",
     "react/prop-types": "off",
