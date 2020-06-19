@@ -59,7 +59,7 @@ module.exports = {
     "unicorn",
   ],
   rules: {
-    "@typescript-eslint/naming-conventions": [
+    "@typescript-eslint/naming-convention": [
       "error",
       { selector: "default", format: ["camelCase"] },
     ],
