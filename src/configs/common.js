@@ -77,6 +77,7 @@ module.exports = {
       { selector: "typeLike", format: ["StrictPascalCase"] },
     ],
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "no-var": "error",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
