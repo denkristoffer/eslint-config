@@ -64,7 +64,10 @@ module.exports = {
       "error",
       { selector: "class", format: ["StrictPascalCase"] },
       { selector: "default", format: ["strictCamelCase"] },
-      { selector: "memberLike", format: ["strictCamelCase"] },
+      {
+        selector: "memberLike",
+        format: ["strictCamelCase", "StrictPascalCase"],
+      },
       {
         selector: "parameter",
         format: ["strictCamelCase"],
