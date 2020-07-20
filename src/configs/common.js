@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         selector: "property",
-        format: ["strictCamelCase", "snake_case"],
+        format: ["snake_case", "strictCamelCase", "StrictPascalCase"],
       },
       { selector: "typeLike", format: ["StrictPascalCase"] },
       {
