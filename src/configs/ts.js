@@ -17,10 +17,6 @@ module.exports = {
             selector: "parameter",
             format: ["strictCamelCase", "StrictPascalCase"],
           },
-          {
-            selector: "variableLike",
-            format: ["strictCamelCase", "StrictPascalCase", "UPPER_CASE"],
-          },
         ],
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [

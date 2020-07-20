@@ -75,6 +75,10 @@ module.exports = {
         format: ["strictCamelCase", "snake_case"],
       },
       { selector: "typeLike", format: ["StrictPascalCase"] },
+      {
+        selector: "variableLike",
+        format: ["strictCamelCase", "StrictPascalCase", "UPPER_CASE"],
+      },
     ],
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
