@@ -12,7 +12,7 @@ module.exports = {
       files: ["**/*.tsx"],
       rules: {
         "@typescript-eslint/naming-convention": [
-          "error",
+          ...common.rules["@typescript-eslint/naming-convention"],
           {
             selector: "parameter",
             format: ["strictCamelCase", "StrictPascalCase"],
