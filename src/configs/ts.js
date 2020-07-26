@@ -20,6 +20,7 @@ module.exports = {
         ],
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
+          ...common.rules["unicorn/prevent-abbreviations"],
           "error",
           {
             replacements: {
