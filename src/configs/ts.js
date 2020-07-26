@@ -24,6 +24,7 @@ module.exports = {
           "error",
           {
             replacements: {
+              ...common.rules["unicorn/prevent-abbreviations"][1].replacements,
               props: false,
               ref: false,
             },
