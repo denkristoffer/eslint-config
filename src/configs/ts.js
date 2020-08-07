@@ -11,6 +11,8 @@ module.exports = {
       files: ["**/*.tsx"],
       rules: {
         "@typescript-eslint/naming-convention": [
+          "error",
+          ...common.rules["@typescript-eslint/naming-convention"].slice(1),
           {
             selector: "parameter",
             format: ["strictCamelCase", "StrictPascalCase"],
