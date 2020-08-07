@@ -1,9 +1,8 @@
 const common = require("./common");
 
 module.exports = {
-  ...common,
   extends: [
-    ...common.extends,
+    "@denkristoffer/eslint-config/src/configs/common",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   overrides: [
@@ -12,7 +11,6 @@ module.exports = {
       files: ["**/*.tsx"],
       rules: {
         "@typescript-eslint/naming-convention": [
-          ...common.rules["@typescript-eslint/naming-convention"],
           {
             selector: "parameter",
             format: ["strictCamelCase", "StrictPascalCase"],
@@ -20,7 +18,6 @@ module.exports = {
         ],
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
-          ...common.rules["unicorn/prevent-abbreviations"],
           "error",
           {
             replacements: {
