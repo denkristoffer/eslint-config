@@ -70,7 +70,7 @@ module.exports = {
       },
       {
         selector: "parameter",
-        format: ["strictCamelCase"],
+        format: ["strictCamelCase", "StrictPascalCase"],
         leadingUnderscore: "allow",
       },
       {

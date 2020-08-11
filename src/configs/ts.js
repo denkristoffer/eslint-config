@@ -10,15 +10,6 @@ module.exports = {
     {
       files: ["**/*.tsx"],
       rules: {
-        "@typescript-eslint/naming-convention": [
-          "error",
-          {
-            selector: "parameter",
-            format: ["strictCamelCase", "StrictPascalCase"],
-            leadingUnderscore: "allow",
-          },
-          ...common.rules["@typescript-eslint/naming-convention"].slice(1),
-        ],
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
           "error",
