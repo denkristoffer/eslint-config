@@ -10,6 +10,7 @@ module.exports = {
     {
       files: ["**/*.tsx"],
       rules: {
+        ...common.rules,
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
           "error",
