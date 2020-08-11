@@ -2,7 +2,7 @@ const common = require("./common");
 
 module.exports = {
   extends: [
-    "@denkristoffer/eslint-config/src/configs/common",
+    "eslint-config/src/configs/common",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   overrides: [
