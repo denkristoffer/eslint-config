@@ -1,6 +1,6 @@
 {
   "name": "@denkristoffer/eslint-config",
-  "version": "7.5.0",
+  "version": "8.0.0",
   "main": "src/index.js",
   "license": "MIT",
   "files": [
@@ -8,15 +8,15 @@
     "src"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-jest": "^23.0.0",
+    "eslint-plugin-jest": "^24.0.0",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "eslint-plugin-unicorn": "^21.0.0"
+    "eslint-plugin-unicorn": "^23.0.0"
   },
   "peerDependencies": {
     "eslint": "^7.0.0",
