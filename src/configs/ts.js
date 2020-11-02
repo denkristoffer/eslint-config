@@ -10,6 +10,18 @@ module.exports = {
     {
       files: ["**/*.tsx"],
       rules: {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            ...common.rules["@typescript-eslint/naming-convention"].filter(
+              (rule) => rule.selector === "property"
+            )[0],
+            filter: {
+              regex: "^(__html)$",
+              match: false,
+            },
+          },
+        ],
         "unicorn/no-null": "off",
         "unicorn/prevent-abbreviations": [
           "error",
