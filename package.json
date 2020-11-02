@@ -1,6 +1,6 @@
 {
   "name": "@denkristoffer/eslint-config",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "main": "src/index.js",
   "license": "MIT",
   "files": [
