@@ -1,3 +1,9 @@
+let jestVersion = 27;
+
+try {
+  jestVersion = require("jest/package.json").version;
+} catch (e) {}
+
 module.exports = {
   extends: [
     "eslint:recommended",
@@ -7,22 +13,13 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:unicorn/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/unicorn",
   ],
   ignorePatterns: ["**/.eslintrc.js"],
   overrides: [
     {
       files: ["**/jest.config.js"],
       rules: {
-        "unicorn/prevent-abbreviations": [
-          "error",
-          {
-            whitelist: {
-              setupFilesAfterEnv: true,
-            },
-          },
-        ],
+        "unicorn/prevent-abbreviations": "error",
       },
     },
     {
@@ -35,7 +32,7 @@ module.exports = {
         "unicorn/prevent-abbreviations": [
           "error",
           {
-            whitelist: {
+            allowList: {
               distDir: true,
             },
           },
@@ -90,6 +87,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "unicorn/filename-case": ["error", { case: "camelCase" }],
+    "unicorn/prefer-json-parse-buffer": "off",
     "unicorn/prevent-abbreviations": [
       "error",
       {
@@ -101,6 +99,9 @@ module.exports = {
     ],
   },
   settings: {
+    jest: {
+      version: jestVersion,
+    },
     react: {
       version: "detect",
     },
