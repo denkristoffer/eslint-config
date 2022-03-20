@@ -14,16 +14,17 @@ module.exports = {
     "plugin:unicorn/recommended",
     "prettier",
   ],
-  ignorePatterns: ["**/.eslintrc.js"],
+  ignorePatterns: ["**/.eslintrc.js", "**/.eslintrc.mjs"],
   overrides: [
+    { files: ["**/*.js", "**/*.mjs"] },
     {
-      files: ["**/jest.config.js"],
+      files: ["**/jest.config.js", "**/jest.config.mjs"],
       rules: {
         "unicorn/prevent-abbreviations": "error",
       },
     },
     {
-      files: ["**/next.config.js"],
+      files: ["**/next.config.js", "**/next.config.mjs"],
       env: {
         node: true,
       },
