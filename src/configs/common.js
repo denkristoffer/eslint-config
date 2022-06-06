@@ -1,9 +1,3 @@
-let jestVersion = 27;
-
-try {
-  jestVersion = require("jest/package.json").version;
-} catch (e) {}
-
 module.exports = {
   extends: [
     "eslint:recommended",
@@ -100,9 +94,6 @@ module.exports = {
     ],
   },
   settings: {
-    jest: {
-      version: jestVersion,
-    },
     react: {
       version: "detect",
     },
