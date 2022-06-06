@@ -7,26 +7,18 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:unicorn/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/unicorn",
   ],
-  ignorePatterns: ["**/.eslintrc.js"],
+  ignorePatterns: ["**/.eslintrc.js", "**/.eslintrc.mjs"],
   overrides: [
+    { files: ["**/*.js", "**/*.mjs"] },
     {
-      files: ["**/jest.config.js"],
+      files: ["**/jest.config.js", "**/jest.config.mjs"],
       rules: {
-        "unicorn/prevent-abbreviations": [
-          "error",
-          {
-            whitelist: {
-              setupFilesAfterEnv: true,
-            },
-          },
-        ],
+        "unicorn/prevent-abbreviations": "error",
       },
     },
     {
-      files: ["**/next.config.js"],
+      files: ["**/next.config.js", "**/next.config.mjs"],
       env: {
         node: true,
       },
@@ -35,7 +27,7 @@ module.exports = {
         "unicorn/prevent-abbreviations": [
           "error",
           {
-            whitelist: {
+            allowList: {
               distDir: true,
             },
           },
@@ -90,6 +82,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "unicorn/filename-case": ["error", { case: "camelCase" }],
+    "unicorn/prefer-json-parse-buffer": "off",
     "unicorn/prevent-abbreviations": [
       "error",
       {
