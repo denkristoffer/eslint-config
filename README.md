@@ -7,7 +7,7 @@ ESLint configuration.
 Install the package
 
 ```sh
-yarn add -D eslint @denkristoffer/eslint-config
+npm i -D eslint @denkristoffer/eslint-config
 ```
 
 and add it to your `.eslintrc.js`.
