@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:unicorn/recommended",
@@ -11,12 +10,6 @@ module.exports = {
   ignorePatterns: ["**/.eslintrc.js", "**/.eslintrc.mjs"],
   overrides: [
     { files: ["**/*.js", "**/*.mjs"] },
-    {
-      files: ["**/jest.config.js", "**/jest.config.mjs"],
-      rules: {
-        "unicorn/prevent-abbreviations": "error",
-      },
-    },
     {
       files: ["**/next.config.js", "**/next.config.mjs"],
       env: {
@@ -34,17 +27,10 @@ module.exports = {
         ],
       },
     },
-    {
-      files: ["**/__tests__/**/*"],
-      env: {
-        "jest/globals": true,
-      },
-    },
   ],
   parser: "@typescript-eslint/parser",
   plugins: [
     "@typescript-eslint",
-    "jest",
     "jsx-a11y",
     "prettier",
     "react",
